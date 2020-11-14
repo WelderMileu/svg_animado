@@ -1,0 +1,59 @@
+*, html, #root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    width: 300px;
+    fill: aqua;
+
+    stroke-width: 20px;
+    stroke-dasharray: 1142;
+    animation: seta 5s infinite;
+    margin: 30px;
+}
+
+#icons {
+    width: 300px;
+    fill: aqua;
+
+    stroke-width: 20px;
+    stroke-dasharray: 3314;
+    animation: awesome 5s infinite;
+    margin: 30px;
+}
+
+@keyframes seta {
+    0% {
+        stroke-dashoffset: 0;
+        fill: orange;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 1142;
+    }
+}
+
+@keyframes awesome {
+    0% {
+        stroke-dashoffset: 0;
+        fill: orange;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 3314;
+    }
+}
